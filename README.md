@@ -1,20 +1,39 @@
-# 3D Portfolio (Starter)
+# 🚀 Deus Portfolio — 3D Space Edition
 
-A starter Three.js scene with a rotating cube, starfield background, lights, and mouse-based camera movement. Built as a base for a high-end 3D portfolio.
+Welcome to my personal 3D portfolio site — an interactive space-themed experience with a floating starfield, smooth animations, and a reactive 3D model.  
+Built using **HTML**, **CSS**, **JavaScript**, and **Three.js**.
 
-## Tech
-- Three.js (WebGL)
-- HTML/CSS/JS (ES modules)
-- No build step required for this basic version
+![Preview](preview.png) <!-- Optional screenshot -->
 
-## Files
-- `index.html`
-- `style.css`
-- `main.js`
-- `package.json` / `package-lock.json` (if you later add packages)
+---
 
-## Run
-Open `index.html` in a browser (for local dev without server),
-or use a simple static server:
-```bash
-npx serve .
+## ✨ Features
+- **Dynamic 3D background** with animated stars  
+- **Fully reactive 3D model** (rotates with your mouse movement)  
+- **Night-in-space theme** with glowing lighting and gradients  
+- **Smooth section transitions** using fade-in effects  
+- **Responsive design** for all screen sizes  
+- **Navigation bar** with active link highlights  
+
+---
+
+## 🛠 Tech Stack
+- **HTML5** — Structure
+- **CSS3** — Styling (space-themed gradient)
+- **JavaScript (ES6)** — Logic & animations
+- **Three.js** — 3D rendering & model loading
+- **GLTFLoader** — Loading `.glb` model
+- **OrbitControls** — Smooth camera movement
+
+---
+
+## 📂 Project Structure
+deus-portfolio/
+│
+├── index.html # Main HTML file
+├── style.css # Styling
+├── main.js # JavaScript logic
+├── assets/ # 3D model and textures
+│ └── myModel.glb
+└── README.md # This file
+

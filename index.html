@@ -1,13 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>3D Portfolio</title>
-  <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Deus — Cosmic Portfolio</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Deus — engineering student building interactive 3D, neon-sleek, performance-minded web experiences." />
+  <meta name="theme-color" content="#00e5ff" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Deus — Cosmic Portfolio" />
+  <meta property="og:description" content="Interactive 3D portfolio with a starfield, neon UI, and smooth motion." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="icons/favicon.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="icons/favicon.png" type="image/png">
+
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <canvas id="bg"></canvas>
-  <script type="module" src="./main.js"></script>
+
+  <!-- Sticky Neon Nav -->
+  <nav id="navbar" class="glass">
+    <div class="nav-inner">
+      <div class="brand">DEUS OMNISSIAH<span class="pulse">•</span></div>
+      <ul>
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Background Canvas -->
+  <canvas id="bg" aria-hidden="true"></canvas>
+
+  <!-- Sections -->
+  <section id="hero" class="panel fade-in">
+    <div class="hero-text">
+      <h1 class="glow">Deus</h1>
+      <p class="tagline">Engineering Student • Full-Stack Explorer • 3D Web Adventurer</p>
+      <div class="cta-row">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn subtle">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="panel fade-in">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+      <div class="about-card glass">
+        <h3>Who I Am</h3>
+        <p>I’m Deus — an engineering student obsessed with building interactive, visually-rich web experiences.</p>
+      </div>
+      <div class="about-card glass">
+        <h3>What I Do</h3>
+        <p>I ship modern frontends, wire up robust backends, and experiment with real-time & AI — learning by building.</p>
+      </div>
+      <div class="about-card glass">
+        <h3>What I’m After</h3>
+        <p>Projects that push boundaries: 3D product sites, data viz, dashboards, and smart tools with delightful UX.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="panel fade-in">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">HTML • CSS • JS</div>
+      <div class="skill-card">Three.js • GSAP</div>
+      <!-- <div class="skill-card">React (next)</div>
+      <div class="skill-card">Node.js • Express</div>
+      <div class="skill-card">MongoDB • Postgres</div>
+      <div class="skill-card">REST • WebSockets</div>
+      <div class="skill-card">Perf & Accessibility</div>
+      <div class="skill-card">Deployment (Vercel/Render)</div> -->
+    </div>
+  </section>
+
+  <section id="projects" class="panel fade-in">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+      <a class="project-card glass tilt" href="#" target="_blank" rel="noreferrer">
+        <div class="project-title">Space Portfolio (This)</div>
+        <div class="project-desc">Twinkling starfield, 3D model, neon UI, scroll FX.</div>
+      </a>
+      <!-- Add more project cards as you ship them -->
+    </div>
+  </section>
+
+  <section id="contact" class="panel fade-in">
+    <h2 class="section-title">Contact</h2>
+    <p class="contact-tag">Let’s build something that feels like the future.</p>
+    <div class="contact-row">
+      <a class="btn primary" href="mailto:tachyros.ftl@gmail.com">Email</a>
+      <a class="btn subtle" href="https://github.com/tachyrosftl-hub" target="_blank" rel="noreferrer">GitHub</a>
+      <a class="btn subtle" href="https://www.linkedin.com/in/shreyansh-avasthi-12848332a" target="_blank" rel="noreferrer">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Deus. All rights reserved.</span>
+  </footer>
+
+  <script type="module" defer src="./main.js"></script>
 </body>
 </html>
