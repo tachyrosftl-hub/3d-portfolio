@@ -125,7 +125,7 @@ setInterval(rebuildConstellations, 3000);
 const loader = new GLTFLoader();
 let model;
 loader.load(
-  'https://drive.google.com/uc?export=download&id=1ttAhyQWznuOh05dKdNJYqJ9bdnODglhL',
+  'https://github.com/tachyrosftl-hub/3d-portfolio/releases/download/v1.0.0/myModel.glb',
   (gltf) => {
     model = gltf.scene;
     model.scale.set(0.35, 0.35, 0.35);
