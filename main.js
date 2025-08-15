@@ -125,7 +125,7 @@ setInterval(rebuildConstellations, 3000);
 const loader = new GLTFLoader();
 let model;
 loader.load(
-  'assets/myModel.glb',
+  'https://drive.google.com/uc?export=download&id=1ttAhyQWznuOh05dKdNJYqJ9bdnODglhL',
   (gltf) => {
     model = gltf.scene;
     model.scale.set(0.35, 0.35, 0.35);
